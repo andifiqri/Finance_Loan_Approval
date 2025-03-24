@@ -24,7 +24,7 @@ The dataset includes the following key features:
 - **CTEs (Common Table Expressions)**: For comparison analysis
 - **Conditional Logic**: CASE statements for approval rate calculation
 
-## Sample Insights
+## Key Insights
 - Applicants with a positive credit history have an approval rate of ≈ 80%.
 - Self-employed individuals have submitted significantly fewer loan applications compared to those who are not self-employed. However, the approval rates between the two groups are not substantially different — 65.75% for self-employed applicants and 68.97% for non-self-employed applicants.
 - Semiurban property areas account for the highest number of loan applications.
