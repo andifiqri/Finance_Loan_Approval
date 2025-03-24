@@ -1,66 +1,38 @@
-# Finance_Loan_Approval
-This project showcases data cleansing and analytical SQL queries derived from a Finance Loan Approval dataset. The analysis focuses on key metrics related to loan applications, including income, credit history, property details, loan amounts, and approval status. The goal is to ensure data integrity and generate actionable insights for informed decision-making.
+# Loan Approval Analysis with SQL
 
-# Dataset Overview
-The dataset contains detailed information about loan applicants and loan status, comprising the following columns:
+This project involves data cleansing and analysis of a loan approval dataset using SQL. The goal is to extract meaningful insights related to loan approval trends, applicant demographics, and key influencing factors such as credit history and employment status.
 
-loan_ID: Unique identifier for each loan applications
+## Dataset Overview
+The dataset includes the following key features:
+- Gender, Marital Status, Dependents
+- Education, Self-Employment Status
+- Applicant & Coapplicant Income
+- Loan Amount, Loan Term
+- Credit History, Property Area
+- Loan Approval Status
 
-Gender: Applicant's gender
+## Key Objectives
+- Handle missing data with appropriate imputation techniques (mode/mean).
+- Analyze loan approval distribution across demographic and financial variables.
+- Determine key drivers behind loan approval decisions.
+- Use advanced SQL techniques including window functions (RANK, LEAD, LAG) and CTEs.
 
-Married: Marital status of the applicant
+## SQL Techniques Used
+- **Data Cleansing**: Mode & Mean Imputation
+- **Aggregations**: GROUP BY, COUNT, AVG, ROUND
+- **Window Functions**: RANK, LEAD, LAG
+- **CTEs (Common Table Expressions)**: For comparison analysis
+- **Conditional Logic**: CASE statements for approval rate calculation
 
-Dependents: Number of dependents
+## Sample Insights
+- Applicants with a positive credit history have an approval rate of ≈ 80%.
+- Self-employed individuals have submitted significantly fewer loan applications compared to those who are not self-employed. However, the approval rates between the two groups are not substantially different — 65.75% for self-employed applicants and 68.97% for non-self-employed applicants.
+- Semiurban property areas account for the highest number of loan applications.
 
-Education: Education level of applicant
+## How to Use
+1. Import the SQL scripts into your MySQL environment.
+2. Run each section in sequence: Data Cleansing → Analysis.
+3. Modify queries to suit your specific analysis needs.
 
-Self_Employed: Employment status
-
-ApplicantIncome: Income of the primary applicant
-
-CoapplicantIncome: Income of co-applicant
-
-Loan_Amount: Amount of loan requested
-
-Loan_Amount_Term: Duration of loan term
-
-Credit_History: Record of credit payment
-
-Property_Area: Type of property area (urban/rural/semiurban)
-
-Loan_Status: Loan approval status
-
-# Data Cleansing Process
-To ensure accurate analysis, data cleansing was performed, including:
-
-•	Detecting missing or empty values.
-
-•	Handling null values via mode imputation for categorical data.
-
-•	Filling numerical gaps with mean imputation (rounded values).
-
-•	Ensuring data integrity using TRANSACTION blocks.
-
-# Cleansing Highlights:
-
-•	Efficient null detection using CASE WHEN logic.
-
-•	Dynamic SQL variables for mode calculation.
-
-•	Mean imputation using AVG() with rounding for consistency.
-
-•	Safe updates and rollback capability using START TRANSACTION and COMMIT.
-
-# SQL Features Utilized
-The project applies various SQL techniques to clean and analyze data effectively:
-
-•	Aggregations: COUNT, AVG, ROUND for summarizing data.
-
-•	Window Functions: RANK, LEAD, LAG for ranking and time-based analysis.
-
-•	CTE: WITH clause for clean and reusable subquery.
-
-•	Join: INNER JOIN for combining related datasets.
-
-• Subqueries: Nested queries for calculating percentage and metrics.
-
+## Tools Used
+- SQL Workbench
