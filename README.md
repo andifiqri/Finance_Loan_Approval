@@ -29,10 +29,5 @@ The dataset includes the following key features:
 - Self-employed individuals have submitted significantly fewer loan applications compared to those who are not self-employed. However, the approval rates between the two groups are not substantially different — 65.75% for self-employed applicants and 68.97% for non-self-employed applicants.
 - Semiurban property areas account for the highest number of loan applications.
 
-## How to Use
-1. Import the SQL scripts into your MySQL environment.
-2. Run each section in sequence: Data Cleansing → Analysis.
-3. Modify queries to suit your specific analysis needs.
-
 ## Tools Used
 - SQL Workbench
