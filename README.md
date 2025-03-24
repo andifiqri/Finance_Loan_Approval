@@ -33,13 +33,13 @@ Loan_Status: Loan approval status
 # Data Cleansing Process
 To ensure accurate analysis, data cleansing was performed, including:
 
-•	Detecting missing or empty values
+•	Detecting missing or empty values.
 
-•	Handling null values via mode imputation for categorical data
+•	Handling null values via mode imputation for categorical data.
 
-•	Filling numerical gaps with mean imputation (rounded values)
+•	Filling numerical gaps with mean imputation (rounded values).
 
-•	Ensuring data integrity using TRANSACTION blocks
+•	Ensuring data integrity using TRANSACTION blocks.
 
 # Cleansing Highlights:
 
