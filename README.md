@@ -30,4 +30,4 @@ The dataset includes the following key features:
 - Semiurban property areas account for the highest number of loan applications.
 
 ## Tools Used
-- SQL Workbench
+- MySQL Workbench
